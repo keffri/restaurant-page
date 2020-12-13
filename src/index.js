@@ -1,7 +1,13 @@
-import createMain from "./modules/mainpage";
+import { renderNav } from "./modules/navbar";
+import { renderFooter } from "./modules/footer";
 
-function init() {
-  createMain();
+const mainContainer = document.getElementById("mainContainer");
+
+function home() {
+  renderNav();
+  renderFooter();
 }
 
-init();
+home();
+
+export { mainContainer };
