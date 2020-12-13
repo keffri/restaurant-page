@@ -4,21 +4,32 @@ function renderNav() {
   let navBar = document.createElement("nav");
   navBar.classList.add("navBar");
 
-  let home = document.createElement("h1");
+  let title = document.createElement("h1");
+  title.classList.add("title");
+  title.textContent = "Restuarant Page";
+
+  navBar.appendChild(title);
+
+  let navContainer = document.createElement("div");
+  navContainer.classList.add("navContainer");
+
+  let home = document.createElement("h2");
   home.classList.add("navText");
   home.textContent = "Home";
 
-  let menu = document.createElement("h1");
+  let menu = document.createElement("h2");
   menu.classList.add("navText");
   menu.textContent = "Menu";
 
-  let about = document.createElement("h1");
+  let about = document.createElement("h2");
   about.classList.add("navText");
   about.textContent = "About";
 
-  navBar.appendChild(home);
-  navBar.appendChild(menu);
-  navBar.appendChild(about);
+  navContainer.appendChild(home);
+  navContainer.appendChild(menu);
+  navContainer.appendChild(about);
+
+  navBar.appendChild(navContainer);
 
   mainContainer.appendChild(navBar);
 }
