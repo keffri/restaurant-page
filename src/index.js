@@ -2,7 +2,7 @@ import { renderNav } from "./modules/navbar";
 import { renderFooter } from "./modules/footer";
 import { renderHome } from "./modules/home";
 import { renderMenu } from "./modules/menu";
-import { renderAbout } from "./modules/about";
+import { renderContact } from "./modules/contact";
 
 const mainContainer = document.getElementById("mainContainer");
 
@@ -30,10 +30,10 @@ function menu() {
   createListeners();
 }
 
-function about() {
+function contact() {
   mainContainer.innerHTML = "";
   renderNav();
-  renderAbout();
+  renderContact();
   renderFooter();
   createListeners();
 }
@@ -45,8 +45,8 @@ function createListeners() {
   const menuBtn = document.querySelector(".menuBtn");
   menuBtn.addEventListener("click", menu);
 
-  const aboutBtn = document.querySelector(".aboutBtn");
-  aboutBtn.addEventListener("click", about);
+  const contactBtn = document.querySelector(".contactBtn");
+  contactBtn.addEventListener("click", contact);
 }
 
 init();
