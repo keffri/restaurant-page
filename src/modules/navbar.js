@@ -14,15 +14,15 @@ function renderNav() {
   navContainer.classList.add("navContainer");
 
   let home = document.createElement("h2");
-  home.classList.add("navText");
+  home.classList.add("navText", "homeBtn");
   home.textContent = "Home";
 
   let menu = document.createElement("h2");
-  menu.classList.add("navText");
+  menu.classList.add("navText", "menuBtn");
   menu.textContent = "Menu";
 
   let about = document.createElement("h2");
-  about.classList.add("navText");
+  about.classList.add("navText", "aboutBtn");
   about.textContent = "About";
 
   navContainer.appendChild(home);
