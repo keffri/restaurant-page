@@ -7,6 +7,12 @@ function renderContact() {
   let contact = document.createElement("div");
   contact.classList.add("contact");
 
+  let contactTitle = document.createElement("h1");
+  contactTitle.classList.add("contactTitle");
+  contactTitle.textContent = "Contact Us";
+
+  contact.appendChild(contactTitle);
+
   contactSection.appendChild(contact);
 
   mainContainer.appendChild(contactSection);
