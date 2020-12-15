@@ -21,13 +21,13 @@ function renderNav() {
   menu.classList.add("navText", "menuBtn");
   menu.textContent = "Menu";
 
-  let about = document.createElement("h2");
-  about.classList.add("navText", "aboutBtn");
-  about.textContent = "About";
+  let contact = document.createElement("h2");
+  contact.classList.add("navText", "contactBtn");
+  contact.textContent = "Contact";
 
   navContainer.appendChild(home);
   navContainer.appendChild(menu);
-  navContainer.appendChild(about);
+  navContainer.appendChild(contact);
 
   navBar.appendChild(navContainer);
 
