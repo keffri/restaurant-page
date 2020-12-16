@@ -4,12 +4,6 @@ function renderNav() {
   let navBar = document.createElement("nav");
   navBar.classList.add("navBar");
 
-  let title = document.createElement("h1");
-  title.classList.add("title");
-  title.textContent = "Restuarant Page";
-
-  navBar.appendChild(title);
-
   let navContainer = document.createElement("div");
   navContainer.classList.add("navContainer");
 
