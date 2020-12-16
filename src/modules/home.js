@@ -11,18 +11,12 @@ function renderHome() {
   homeTitle.classList.add("homeTitle");
   homeTitle.textContent = "Bob's Burgers";
 
-  // let homeText = document.createElement("p");
-  // homeText.classList.add("homeText");
-  // homeText.textContent =
-  //   " Lorem ipsum dolor, sit amet consectetur adipisicing elit.";
-
   let homeImg = document.createElement("img");
   homeImg.classList.add("homeImg");
-  homeImg.src =
-    "../dist/images/BobsBurgers_1005_BobBelcherAndTheTerribleHorrible..._A05_Promo_08.jpg";
+  homeImg.src = "../dist/images/bobs-burgers-review-image-1024x587.jpg";
 
   home.appendChild(homeTitle);
-  // home.appendChild(homeText);
+
   home.appendChild(homeImg);
   homeSection.appendChild(home);
 
