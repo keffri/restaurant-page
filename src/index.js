@@ -9,7 +9,7 @@ const mainContainer = document.getElementById("mainContainer");
 function init() {
   mainContainer.innerHTML = "";
   renderNav();
-  renderMenu();
+  renderContact();
   renderFooter();
   createListeners();
 }
