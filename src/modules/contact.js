@@ -19,6 +19,7 @@ function renderContact() {
 
   let location = document.createElement("p");
   location.classList.add("location");
+  location.textContent = "Conveniently located on Ocean Avenue.";
 
   form.appendChild(location);
   formContainer.appendChild(form);
