@@ -11,7 +11,20 @@ function renderContact() {
   contactTitle.classList.add("contactTitle");
   contactTitle.textContent = "Contact Us";
 
+  let formContainer = document.createElement("div");
+  formContainer.classList.add("formContainer");
+
+  let form = document.createElement("form");
+  form.classList.add("form");
+
+  let location = document.createElement("p");
+  location.classList.add("location");
+
+  form.appendChild(location);
+  formContainer.appendChild(form);
+
   contact.appendChild(contactTitle);
+  contact.appendChild(formContainer);
 
   contactSection.appendChild(contact);
 
