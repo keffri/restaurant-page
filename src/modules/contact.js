@@ -11,21 +11,31 @@ function renderContact() {
   contactTitle.classList.add("contactTitle");
   contactTitle.textContent = "Contact Us";
 
-  let formContainer = document.createElement("div");
-  formContainer.classList.add("formContainer");
+  let contactContainer = document.createElement("div");
+  contactContainer.classList.add("contactContainer");
 
-  let form = document.createElement("form");
-  form.classList.add("form");
+  let contactTextOne = document.createElement("p");
+  contactTextOne.classList.add("contactText");
+  contactTextOne.textContent = "Conveniently located on Ocean Avenue.";
 
-  let location = document.createElement("p");
-  location.classList.add("location");
-  location.textContent = "Conveniently located on Ocean Avenue.";
+  let contactTextTwo = document.createElement("p");
+  contactTextTwo.classList.add("contactText");
+  contactTextTwo.textContent = "Down the road from the Wonder Wharf.";
 
-  form.appendChild(location);
-  formContainer.appendChild(form);
+  let contactTextThree = document.createElement("p");
+  contactTextThree.classList.add("contactText");
+  contactTextThree.textContent = "Beside It's Your Funeral and Crematorium";
+
+  let contactImg = document.createElement("img");
+  contactImg.src = "../dist/images/Bob's_Burgers_promo.png";
+
+  contactContainer.appendChild(contactTextOne);
+  contactContainer.appendChild(contactTextTwo);
+  contactContainer.appendChild(contactTextThree);
+  contactContainer.appendChild(contactImg);
 
   contact.appendChild(contactTitle);
-  contact.appendChild(formContainer);
+  contact.appendChild(contactContainer);
 
   contactSection.appendChild(contact);
 
