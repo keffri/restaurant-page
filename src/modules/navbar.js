@@ -11,6 +11,10 @@ function renderNav() {
   home.classList.add("navText", "homeBtn");
   home.textContent = "Home";
 
+  let botd = document.createElement("h2");
+  botd.classList.add("navText", "botdBtn");
+  botd.textContent = "Burger of the Day";
+
   let menu = document.createElement("h2");
   menu.classList.add("navText", "menuBtn");
   menu.textContent = "Menu";
@@ -20,6 +24,7 @@ function renderNav() {
   contact.textContent = "Contact";
 
   navContainer.appendChild(home);
+  navContainer.appendChild(botd);
   navContainer.appendChild(menu);
   navContainer.appendChild(contact);
 
