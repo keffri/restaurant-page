@@ -2,6 +2,7 @@ import { renderNav } from "./modules/navbar";
 import { renderFooter } from "./modules/footer";
 import { renderHome } from "./modules/home";
 import { renderMenu } from "./modules/menu";
+import { renderBOTD } from "./modules/botd";
 import { renderContact } from "./modules/contact";
 
 const mainContainer = document.getElementById("mainContainer");
@@ -9,7 +10,7 @@ const mainContainer = document.getElementById("mainContainer");
 function init() {
   mainContainer.innerHTML = "";
   renderNav();
-  renderContact();
+  renderHome();
   renderFooter();
   createListeners();
 }
@@ -30,6 +31,14 @@ function menu() {
   createListeners();
 }
 
+function botd() {
+  mainContainer.innerHTML = "";
+  renderNav();
+  renderBOTD();
+  renderFooter();
+  createListeners();
+}
+
 function contact() {
   mainContainer.innerHTML = "";
   renderNav();
@@ -41,6 +50,9 @@ function contact() {
 function createListeners() {
   const homeBtn = document.querySelector(".homeBtn");
   homeBtn.addEventListener("click", home);
+
+  const botdBtn = document.querySelector(".botdBtn");
+  botdBtn.addEventListener("click", botd);
 
   const menuBtn = document.querySelector(".menuBtn");
   menuBtn.addEventListener("click", menu);
