@@ -27,7 +27,8 @@ function renderContact() {
   contactTextThree.textContent = "Beside It's Your Funeral and Crematorium";
 
   let contactImg = document.createElement("img");
-  contactImg.src = "../dist/images/Bob's_Burgers_promo.png";
+  contactImg.src =
+    "https://upload.wikimedia.org/wikipedia/en/7/7f/Bob%27s_Burgers_promo.png";
 
   contactContainer.appendChild(contactTextOne);
   contactContainer.appendChild(contactTextTwo);

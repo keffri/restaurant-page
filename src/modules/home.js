@@ -13,7 +13,8 @@ function renderHome() {
 
   let homeImg = document.createElement("img");
   homeImg.classList.add("homeImg");
-  homeImg.src = "../dist/images/bobs-burgers-review-image-1024x587.jpg";
+  homeImg.src =
+    "https://www.pluggedin.com/wp-content/uploads/2020/01/bobs-burgers-review-image-1024x587.jpg";
 
   home.appendChild(homeTitle);
 
